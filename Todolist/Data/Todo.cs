@@ -12,14 +12,13 @@
                 _title = value;
             }
         }
-        public string Description { get; set; }
 
+        public bool State { get; set; }
 
-
-        public Todo(string title, string description = "")
+        public Todo(string title, bool state=false)
         {
             Title = title;
-            Description = description;
+            State = state;
         }
     }
 }
